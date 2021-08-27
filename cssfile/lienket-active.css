@@ -1,0 +1,9 @@
+.lienket-active{
+    width: 2rem;
+    margin: 0 0 0 10px;
+    transition: 0.5s;
+}
+
+.lienket-active:hover{
+    opacity: 0.8;
+}

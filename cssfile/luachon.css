@@ -1,0 +1,164 @@
+.luachon{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-top: 45px;
+    background-color: cyan;
+    margin-left: -8px;
+    margin-bottom: 60px;
+}
+
+.luachon__left{
+    display:flex;
+    justify-content: space-evenly;
+    margin-left: 30px;
+}
+
+.luachon__right{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 80px;
+}
+
+.luachon--item{
+    background-color: cyan;
+    color: #000;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+a.luachon--item{
+    text-decoration: none;
+}
+
+.luachon--item:hover{
+    background-color: rgb(111, 180, 180);
+    transition: 0.65s;
+}
+
+.danhsach{
+    margin-top: 82px;
+    width: 250px;
+    height: 110px;
+    min-height: 100px;
+    margin-left: 0px;
+    background-color: yellow;
+    display: block;
+    position: absolute;
+    z-index: 999;
+}
+
+.luachon--item--danhsach{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+}
+
+.luachon--item--danhsach .item{
+    background: transparent;
+    text-decoration: none;
+    color: #000;
+}
+
+.luachon--item--danhsach > a{
+    width: 100%;
+    padding: 2rem;
+}
+
+.luachon--item--danhsach .item span{
+    background: transparent;
+}
+
+.luachon--item--danhsach ul.danhsach li{
+    list-style: disc;
+}
+
+.luachon--item--danhsach ul.danhsach li a{
+    background-color: yellow;
+    text-decoration: none;
+    display: block;
+    color:  #000;
+    border-bottom: 1px solid #ccc;
+    margin-left: -40.25px;
+    line-height: 40px;
+    text-indent: 28px;
+}
+
+.luachon--item{
+    cursor: pointer;
+}
+
+.luachon--item--danhsach ul.danhsach li a:hover{
+    background-color: rgb(170, 180, 111);
+    transition: 0.65s;
+}
+
+.mucluc{
+    display:none;
+}
+
+@media (max-width: 1108px){
+    #mobile{
+        width: 30%;
+    }
+
+    .luachon--mobile{
+        width: 150px;
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .mucluc{
+        display: flex;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border: solid;
+        box-shadow: 10px lightgreen;
+        cursor:pointer;
+    }
+
+    .luachon{
+        height: 0px;
+        width: 250px;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .luachon--item--danhsach{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .luachon--item--danhsach .danhsach{
+        margin: 0px 0 0 150px;
+    }
+
+    .luachon__left{
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .luachon__left ul.danhsach{
+        width: 180px;
+    }
+
+    .luachon--item{
+        border-bottom: solid 2px #ccc;
+    }
+
+    .luachon__right{
+        flex-direction: column;
+        margin-right: 0px;
+    }
+
+    .mucluc:hover {
+        opacity: 0.8;
+    }
+}

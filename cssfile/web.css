@@ -1,0 +1,8 @@
+@media (max-width: 1108px) {
+    .web{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+}

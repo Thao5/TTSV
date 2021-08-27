@@ -1,0 +1,9 @@
+.back_to_top img{
+    display:block;
+    width: 5rem;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    background: transparent;
+    z-index: 999999;
+}
