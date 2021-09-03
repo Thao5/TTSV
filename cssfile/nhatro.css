@@ -1,0 +1,110 @@
+#nhatro{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 50px 0 25px 0;
+}
+
+#nhatro #nhatro__left{
+    width: 70rem;
+}
+
+#nhatro .nhatro__left__items{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+#nhatro .nhatro__left__items img{
+    width: 100%;
+    background: transparent;
+}
+
+#nhatro .nhatro__left__items li{
+    list-style-type: none;
+    width: 25%;
+}
+
+#nhatro .nhatro__left__items li > div{
+    display: flex;
+}
+#nhatro .nhatro__left__items li > div > div{
+    width: 0;
+    margin:0;
+    padding:0;
+}
+
+#nhatro .nhatro__left__items li > div > div > p{
+    width: 20rem;
+    height: 31.5rem;
+    overflow: auto;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    margin-left: -50px;
+    border: solid #fff;
+    border-radius: 25px;;
+    z-index: 99999;
+}
+
+#nhatro .nhatro__left__items li div > a{
+    text-decoration: none;
+    color: #000;
+}
+
+#nhatro .nhatro__left__items li div > a{
+    display: block;
+    border: solid #fff;
+    border-radius: 25px;
+    margin-right: 50px;
+    padding-top: 25px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 2px 0 2px #ccc;
+}
+
+#nhatro .nhatro__left__items li div > a > h3{
+    background-color: cyan;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#nhatro #nhatro__right{
+    width: 20rem;
+    height: 20rem;
+    text-indent: 50px;
+    line-height: 50px;
+}
+
+#nhatro #nhatro__right ul{
+    border: solid #ccc;
+    border-bottom: none;
+}
+
+#nhatro #nhatro__right ul > li{
+    border-bottom: solid #ccc ;
+    list-style-type: none;
+    margin-left: -40px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#nhatro #nhatro__right ul > li > a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    background: transparent;
+}
+
+#nhatro #nhatro__right ul > li:hover{
+    background: rgb(185, 181, 181);;
+}
+
+#nhatro #nhatro__left ul li div > a > p{
+    background: transparent;
+}

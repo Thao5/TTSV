@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    if($(window).width() > 1180){
+    if($(window).width() > 1108){
         $(".danhsach").hide()
 
         $(".luachon--item--danhsach > a").click(function(){
