@@ -29,6 +29,7 @@
     <script src="jsfile/nhatro__left.js"></script>
     <script src="jsfile/luachon.js"></script>
     <script src="jsfile/top.js"></script>
+    <script src="jsfile/find.js"></script>
     <style>
         body{
             font-family: arial, helvetica, sans-serif;
@@ -101,7 +102,7 @@
                     <div id="search">
                         <div class="search-box">
                             <div class="input-box">
-                                <input type="text" placeholder="Nhập từ cần tìm kiếm..."/>
+                                <input id="kw" type="text" placeholder="Nhập từ cần tìm kiếm..."/>
                             </div>
                             <div id="search-btn" class="btn btn--img">
                                 <img src="imgweb/kinhlup.png" alt="Search" />
@@ -118,7 +119,7 @@
                                 <a class="nhatro__left__items--item" href="">
                                     <img src="imgweb/imgtro1.jpg" alt="hinh ảnh trọ 1">
                                     <h3>Nhấn vào để xem chi tiết</h3>
-                                    <p>Nhà trọ ABC</p>
+                                    <p>NHÀ TRỌ ABC</p>
                                 </a>
 
                                 <div>
@@ -133,7 +134,7 @@
                                 <a class="nhatro__left__items--item" href="">
                                     <img src="imgweb/imgtro1.jpg" alt="hinh ảnh trọ 2">
                                     <h3>Nhấn vào để xem chi tiết</h3>
-                                    <p>Nhà trọ XYZ</p>
+                                    <p>NHÀ TRỌ XYZ</p>
                                 </a>
 
                                 <div>
@@ -148,7 +149,7 @@
                                 <a class="nhatro__left__items--item" href="">
                                     <img src="imgweb/imgtro1.jpg" alt="hinh ảnh trọ 3">
                                     <h3>Nhấn vào để xem chi tiết</h3>
-                                    <p>Nhà trọ NML</p>
+                                    <p>NHÀ TRỌ NML</p>
                                 </a>
 
                                 <div>
@@ -163,7 +164,7 @@
                                 <a class="nhatro__left__items--item" href="">
                                     <img src="imgweb/imgtro1.jpg" alt="hinh ảnh trọ 4">
                                     <h3>Nhấn vào để xem chi tiết</h3>
-                                    <p>Nhà trọ CVB</p>
+                                    <p>NHÀ TRỌ CVB</p>
                                 </a>
 
                                 <div>
@@ -176,13 +177,15 @@
                 </div>
 
                 <div id="nhatro__right">
-                    <h2>Loại nhà Trọ</h2>
-                    <ul>
-                        <li title="tatca"><a href="javascript:;">Tất cả</a></li>
-                        <li title="nam"><a href="javascript:;">Top Năm</a></li>
-                        <li title="thang"><a href="javascript:;">Top Tháng</a></li>
-                        <li title="ngay"><a href="javascript:;">Top Ngày</a></li>
-                    </ul>
+                    <div>
+                        <h2>Loại nhà Trọ</h2>
+                        <ul>
+                            <li title="tatca"><a href="javascript:;">Tất cả</a></li>
+                            <li title="nam"><a href="javascript:;">Top Năm</a></li>
+                            <li title="thang"><a href="javascript:;">Top Tháng</a></li>
+                            <li title="ngay"><a href="javascript:;">Top Ngày</a></li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 

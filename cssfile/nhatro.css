@@ -7,7 +7,7 @@
 }
 
 #nhatro #nhatro__left{
-    width: 70rem;
+    width: 70%;
 }
 
 #nhatro .nhatro__left__items{
@@ -15,8 +15,8 @@
     margin: 0;
     padding: 0;
     display: flex;
-    position: relative;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 #nhatro .nhatro__left__items img{
@@ -75,9 +75,9 @@
 }
 
 #nhatro #nhatro__right{
-    width: 20rem;
+    width: 20%;
     height: 20rem;
-    text-indent: 50px;
+    text-indent: 20%;
     line-height: 50px;
 }
 
