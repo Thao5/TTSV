@@ -27,6 +27,7 @@
 #nhatro .nhatro__left__items li{
     list-style-type: none;
     width: 25%;
+    margin: 2%;
 }
 
 #nhatro .nhatro__left__items li > div{
@@ -79,6 +80,7 @@
     height: 20rem;
     text-indent: 20%;
     line-height: 50px;
+
 }
 
 #nhatro #nhatro__right ul{
@@ -107,4 +109,29 @@
 
 #nhatro #nhatro__left ul li div > a > p{
     background: transparent;
+}
+
+#arrow-top{
+    position: fixed;
+    width: 3rem;
+    height: 2.25rem;
+    top: 20%;
+    text-align: center;
+    font-size: 2rem;
+    border-style: solid;
+    border-color: #ccc;
+    right: 0;
+    background-color: #fff;
+    transition: opacity 0.65s;
+}
+
+#arrow-top a .fa-angle-double-left{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #fff;
+}
+
+#arrow-top:hover{
+    opacity: 0.6;
 }
