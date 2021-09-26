@@ -16,11 +16,9 @@ $(document).ready(function(){
         $(".luachon").hide()
 
         $(".mucluc").click(function(){
-            $(".luachon").fadeIn(650)
+            $(".luachon").toggle()
 
-            $(".luachon").mouseleave(function(){
-                $(".luachon").fadeOut(650)
-            })
+            
         })
         
         $(".danhsach").hide()

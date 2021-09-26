@@ -1,11 +1,29 @@
 $(document).ready(function(){
     $("#nhatro .nhatro__left__items li > div > div > p").hide()
-
-    $("#nhatro #nhatro__left .nhatro__left__items > li").click(function(){
+    $("#back-tro").hide()
+    $("#nhatro #nhatro__left .nhatro__left__items > li > div > a").click(function(){
         event.preventDefault()
-        $(this).removeClass("nhatro__left__items--item--on")
-        $("#nhatro #nhatro__left .nhatro__left__items > .nhatro__left__items--item--on").toggle(650)
-        $("#nhatro .nhatro__left__items li > div > div > p").toggle(650)
-        $(this).addClass("nhatro__left__items--item--on")
+        var linktro = $(this).attr("href")
+        $("#nhatro #nhatro__left .nhatro__left__items > li").hide()
+        $(this).parent().parent().fadeIn(650)
+        $(linktro).show(650)
+        $("#back-tro").fadeIn(650)
+    })
+
+    $(".nhatro__left__items li").addClass("on")
+
+    $("#back-tro").click(function(){
+        $("#nhatro #nhatro__left .nhatro__left__items > li").fadeOut(650)
+        $(".on").fadeIn(650)
+        $("#nhatro .nhatro__left__items li > div > div > p").hide(650)
+        $("#back-tro").hide()
+    })
+
+    $("#nhatro__right div > ul").click(function(){
+        $("#nhatro .nhatro__left__items li > div > div > p").hide(650)
+    })
+
+    $("#search-btn").click(function(){
+        $("#nhatro .nhatro__left__items li > div > div > p").hide(650)
     })
 })

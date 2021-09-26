@@ -6,6 +6,7 @@
     background-color: cyan;
     margin-left: -8px;
     margin-bottom: 60px;
+    z-index: 9999;
 }
 
 .luachon__left{
@@ -45,7 +46,7 @@ a.luachon--item{
     background-color: yellow;
     display: block;
     position: absolute;
-    z-index: 999;
+    z-index: 99999;
 }
 
 .luachon--item--danhsach{
@@ -106,34 +107,41 @@ a.luachon--item{
     .luachon--mobile{
         width: 150px;
         display:flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         position: relative;
     }
 
     .mucluc{
-        display: flex;
+        display: block;
         position: absolute;
         width: 40px;
         height: 40px;
         border: solid;
         box-shadow: 10px lightgreen;
         cursor:pointer;
+        left: 0;
     }
 
     .luachon{
-        height: 0px;
-        width: 250px;
+        height: 0;
+        max-width: 150px;
         display: flex;
-        position: relative;
+        position: absolute;
         flex-direction: column;
         margin-left: 0px;
+        left: 0;
     }
 
     .luachon--item--danhsach{
         display: flex;
         flex-direction: column;
+        width: 100%;
+    }
+
+    .luachon--item--danhsach > a{
+        width: auto;
     }
 
     .luachon--item--danhsach .danhsach{

@@ -4,6 +4,7 @@
     justify-content: space-evenly;
     align-items: flex-start;
     margin: 50px 0 25px 0;
+    position: relative;
 }
 
 #nhatro #nhatro__left{
@@ -41,12 +42,11 @@
 
 #nhatro .nhatro__left__items li > div > div > p{
     width: 20rem;
-    height: 31.5rem;
+    height: 100%;
     overflow: auto;
     background-color: #fff;
     margin: 0;
     padding: 0;
-    margin-left: -50px;
     border: solid #fff;
     border-radius: 25px;;
     z-index: 99999;
@@ -61,7 +61,6 @@
     display: block;
     border: solid #fff;
     border-radius: 25px;
-    margin-right: 50px;
     padding-top: 25px;
     text-align: center;
     background-color: #fff;
@@ -77,15 +76,21 @@
 
 #nhatro #nhatro__right{
     width: 20%;
-    height: 20rem;
+    height: 18.75rem;
     text-indent: 20%;
     line-height: 50px;
-
+    background-color: #fff;
+    border-style: solid;
+    border-color: #ccc;
+    border-bottom: none;
 }
 
 #nhatro #nhatro__right ul{
     border: solid #ccc;
     border-bottom: none;
+    border-right: none;
+    border-left: none;
+    margin-top: 0;
 }
 
 #nhatro #nhatro__right ul > li{
@@ -94,6 +99,13 @@
     margin-left: -40px;
     background-color: #fff;
     cursor: pointer;
+}
+
+#nhatro__right div > h2 {
+    background: #fff;
+    margin-bottom: 0;
+    padding-bottom: 5%;
+    color: red;
 }
 
 #nhatro #nhatro__right ul > li > a{
@@ -134,4 +146,25 @@
 
 #arrow-top:hover{
     opacity: 0.6;
+}
+
+#back-tro{
+    position: absolute;
+    top: 45%;
+    left: 12%;
+    width: 0;
+}
+
+#back-tro a{
+    display: block;
+}
+
+#back-tro a .fa-arrow-left{
+    font-size: 4rem;
+}
+
+@media(max-width: 1200px){
+    #nhatro .nhatro__left__items li > div > div > p{
+        width: 16rem;
+    }
 }

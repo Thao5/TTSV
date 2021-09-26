@@ -1,21 +1,60 @@
 $(document).ready(function(){
     //$(".nhatro__left__items").hide()
-    $("#arrow-top").hide()
+    if($(window).width() <= 900){
+        $("#arrow-top").show(650)
+        $("#arrow-top").css({
+            "position" : "absolute",
+            "top" : 0,
+            "right" : 0
+        })
+        $("#nhatro__right").css({
+            "position" : "static"
+        })
+        $("#nhatro__right").hide(650)
+    } else{
+        $("#arrow-top").hide()
+    }
     $(window).scroll(function(){
         if($(this).scrollTop() >= 619){
-            $("#nhatro__right").css({
-                "position" : "fixed",
-                "right" : 0,
-                "top" : "21%"
-            })
-            $("#arrow-top").show(650)
-            $("#nhatro__right").hide(650)
+            if($(window).width() > 900){
+                $("#nhatro__right").css({
+                    "position" : "fixed",
+                    "right" : 0,
+                    "top" : "25%"
+                })
+                $("#arrow-top").show(650)
+                $("#nhatro__right").hide(650)
+            } else{
+                $("#arrow-top").css({
+                    "position" : "fixed"
+                })
+                $("#nhatro__right").css({
+                    "position" : "fixed",
+                    "right" : 0,
+                    "top" : "6%"
+                })
+                $("#arrow-top").show(650)
+                $("#nhatro__right").hide(650)
+            }
         } else{
-            $("#nhatro__right").css({
-                "position" : "static"
-            })
-            $("#arrow-top").hide(650)
-            $("#nhatro__right").show(650)
+            if($(window).width() <= 900){
+                $("#arrow-top").show(650)
+                $("#arrow-top").css({
+                    "position" : "absolute",
+                    "top" : 0,
+                    "right" : 0
+                })
+                $("#nhatro__right").css({
+                    "position" : "static"
+                })
+                $("#nhatro__right").hide(650)
+            }else{
+                $("#nhatro__right").css({
+                    "position" : "static"
+                })
+                $("#arrow-top").hide(650)
+                $("#nhatro__right").show(650)
+            }
         }
     })
 
@@ -24,13 +63,20 @@ $(document).ready(function(){
     })
     
     $("#nhatro__right ul > li").click(function(){
-        $(".nhatro__left__items--item--on").fadeOut(650)
+        $(".nhatro__left__items li").fadeOut(650)
         var a=$(this).attr("title")
         if(a === "tatca"){
-            $(".nhatro__left__items--item--on").fadeIn(650)
+            $(".nhatro__left__items li").removeClass("on")
+            $(".nhatro__left__items li").addClass("on")
+            $(".nhatro__left__items li").fadeIn(650)
         } else{          
-            var b=`.nhatro__left__items--item--${a}`
+            var b=`li.nhatro__left__items--item--${a}`
+            $(".nhatro__left__items li").removeClass("on")
+            $(b).addClass("on")
             $(b).fadeIn(650)
         }
+        $("#back-tro").hide()
     })
+
+    
 })
