@@ -9,7 +9,7 @@ $(document).ready(function(){
         $("#nhatro__right").css({
             "position" : "absolute",
             "right" : 0,
-            "top" : "2.75%"
+            "top" : "40px"
         })
         $("#nhatro__right").hide(650)
         $(window).scroll(function(){
@@ -36,7 +36,7 @@ $(document).ready(function(){
                 $("#nhatro__right").css({
                     "position" : "absolute",
                     "right" : 0,
-                    "top" : "2.75%"
+                    "top" : "40px"
                 })
             }
         })
