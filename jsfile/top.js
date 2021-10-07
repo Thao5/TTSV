@@ -1,43 +1,32 @@
 $(document).ready(function(){
     //$(".nhatro__left__items").hide()
-    if($(window).width() <= 900){
-        $("#arrow-top").show(650)
+    if($(window).width() <= 1108){
         $("#arrow-top").css({
             "position" : "absolute",
             "top" : 0,
             "right" : 0
         })
         $("#nhatro__right").css({
-            "position" : "static"
+            "position" : "absolute",
+            "right" : 0,
+            "top" : "2.75%"
         })
         $("#nhatro__right").hide(650)
-    } else{
-        $("#arrow-top").hide()
-    }
-    $(window).scroll(function(){
-        if($(this).scrollTop() >= 619){
-            if($(window).width() > 900){
+        $(window).scroll(function(){
+            if($(this).scrollTop() >= 619){
                 $("#nhatro__right").css({
                     "position" : "fixed",
                     "right" : 0,
                     "top" : "25%"
                 })
-                $("#arrow-top").show(650)
                 $("#nhatro__right").hide(650)
-            } else{
                 $("#arrow-top").css({
-                    "position" : "fixed"
-                })
-                $("#nhatro__right").css({
                     "position" : "fixed",
-                    "right" : 0,
-                    "top" : "6%"
+                    "top": "20%",
+                    "right" : 0
                 })
+            } else{
                 $("#arrow-top").show(650)
-                $("#nhatro__right").hide(650)
-            }
-        } else{
-            if($(window).width() <= 900){
                 $("#arrow-top").show(650)
                 $("#arrow-top").css({
                     "position" : "absolute",
@@ -45,18 +34,32 @@ $(document).ready(function(){
                     "right" : 0
                 })
                 $("#nhatro__right").css({
-                    "position" : "static"
+                    "position" : "absolute",
+                    "right" : 0,
+                    "top" : "2.75%"
                 })
-                $("#nhatro__right").hide(650)
-            }else{
-                $("#nhatro__right").css({
-                    "position" : "static"
-                })
-                $("#arrow-top").hide(650)
-                $("#nhatro__right").show(650)
             }
-        }
-    })
+        })
+    } else{
+        $("#arrow-top").hide()
+        $(window).scroll(function(){
+            if($(this).scrollTop() >= 619){
+                    $("#nhatro__right").css({
+                        "position" : "fixed",
+                        "right" : 0,
+                        "top" : "25%"
+                    })
+                    $("#arrow-top").show(650)
+                    $("#nhatro__right").hide(650)
+            } else{
+                    $("#nhatro__right").css({
+                        "position" : "static"
+                    })
+                    $("#arrow-top").hide(650)
+                    $("#nhatro__right").show(650)
+            }
+        })
+    }
 
     $("#arrow-top").click(function(){
         $("#nhatro__right").toggle(650)
