@@ -1,6 +1,6 @@
 $(document).ready(function(){
     //$(".nhatro__left__items").hide()
-    if($(window).width() <= 1108){
+    if($(window).width() <= 1108){ //aaaaaaaaaaa
         $("#arrow-top").css({
             "position" : "absolute",
             "top" : 0,
