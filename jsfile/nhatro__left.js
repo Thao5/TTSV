@@ -8,6 +8,9 @@ $(document).ready(function(){
         $(this).parent().parent().fadeIn(650)
         $(linktro).show(650)
         $("#back-tro").fadeIn(650)
+        $("#nhatro #nhatro__left .nhatro__left__items").css({
+            "margin-left" : "-100px",
+        })
     })
 
     $(".nhatro__left__items li").addClass("on")
@@ -17,6 +20,9 @@ $(document).ready(function(){
         $(".on").fadeIn(650)
         $("#nhatro .nhatro__left__items li > div > div > p").hide(650)
         $("#back-tro").hide()
+        $("#nhatro #nhatro__left .nhatro__left__items").css({
+            "margin-left" : 0,
+        })
     })
 
     $("#nhatro__right div > ul").click(function(){

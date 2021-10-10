@@ -168,3 +168,9 @@
         width: 16rem;
     }
 }
+
+@media(max-width: 1108px){
+    #nhatro #nhatro__left .nhatro__left__items li{
+        Width: 35%;
+    }
+}
