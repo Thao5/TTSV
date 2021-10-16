@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#nhatro .nhatro__left__items li > div > div > p").hide()
+    $("#nhatro .nhatro__left__items li > div > div").hide()
     $("#back-tro").hide()
     $("#nhatro #nhatro__left .nhatro__left__items > li > div > a").click(function(){
         event.preventDefault()
@@ -13,12 +13,12 @@ $(document).ready(function(){
         })
     })
 
-    $(".nhatro__left__items li").addClass("on")
+    $(".nhatro__left__items > li").addClass("on")
 
     $("#back-tro").click(function(){
         $("#nhatro #nhatro__left .nhatro__left__items > li").fadeOut(650)
         $(".on").fadeIn(650)
-        $("#nhatro .nhatro__left__items li > div > div > p").hide(650)
+        $("#nhatro .nhatro__left__items > li > div > div").hide(650)
         $("#back-tro").hide()
         $("#nhatro #nhatro__left .nhatro__left__items").css({
             "margin-left" : 0,
@@ -26,10 +26,10 @@ $(document).ready(function(){
     })
 
     $("#nhatro__right div > ul").click(function(){
-        $("#nhatro .nhatro__left__items li > div > div > p").hide(650)
+        $("#nhatro .nhatro__left__items li > div > div").hide(650)
     })
 
     $("#search-btn").click(function(){
-        $("#nhatro .nhatro__left__items li > div > div > p").hide(650)
+        $("#nhatro .nhatro__left__items li > div > div").hide(650)
     })
 })

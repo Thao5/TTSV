@@ -66,15 +66,18 @@ $(document).ready(function(){
     })
     
     $("#nhatro__right ul > li").click(function(){
-        $(".nhatro__left__items li").fadeOut(650)
+        $(".nhatro__left__items > li").fadeOut(650)
+        $("#nhatro #nhatro__left .nhatro__left__items").css({
+            "margin-left" : 0,
+        })
         var a=$(this).attr("title")
         if(a === "tatca"){
-            $(".nhatro__left__items li").removeClass("on")
-            $(".nhatro__left__items li").addClass("on")
-            $(".nhatro__left__items li").fadeIn(650)
+            $(".nhatro__left__items > li").removeClass("on")
+            $(".nhatro__left__items > li").addClass("on")
+            $(".nhatro__left__items > li").fadeIn(650)
         } else{          
             var b=`li.nhatro__left__items--item--${a}`
-            $(".nhatro__left__items li").removeClass("on")
+            $(".nhatro__left__items > li").removeClass("on")
             $(b).addClass("on")
             $(b).fadeIn(650)
         }

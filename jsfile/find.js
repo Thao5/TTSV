@@ -11,5 +11,8 @@ $(document).ready(function(){
             $(".nhatro__left__items--item--on").fadeIn(650)
         }
         $("#back-tro").hide()
+        $("#nhatro #nhatro__left .nhatro__left__items").css({
+            "margin-left" : 0,
+        })
     })  
 })

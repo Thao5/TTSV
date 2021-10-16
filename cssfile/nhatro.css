@@ -25,7 +25,7 @@
     background: transparent;
 }
 
-#nhatro .nhatro__left__items li{
+#nhatro .nhatro__left__items > li{
     list-style-type: none;
     width: 25%;
     margin: 2%;
@@ -40,7 +40,7 @@
     padding:0;
 }
 
-#nhatro .nhatro__left__items li > div > div > p{
+#nhatro .nhatro__left__items li > div > div > div{
     width: 20rem;
     height: 100%;
     overflow: auto;
@@ -50,6 +50,34 @@
     border: solid #fff;
     border-radius: 25px;;
     z-index: 99999;
+}
+
+#nhatro .nhatro__left__items li > div > div > div ul{
+    background: transparent;
+}
+
+#nhatro .nhatro__left__items li > div > div > div ul li{
+    background: transparent;
+}
+
+#nhatro .nhatro__left__items li > div > div > div ul li p{
+    background: transparent;
+}
+
+#nhatro .nhatro__left__items li > div > div > div ul li b{
+    background: transparent;
+}
+
+#nhatro .nhatro__left__items li > div > div > div ul li a{
+    background: transparent;
+}
+
+#nhatro .nhatro__left__items li > div > div > div ul li h3{
+    background: transparent;
+}
+
+#nhatro .nhatro__left__items li > div > div > div ul li h4{
+    background: transparent;
 }
 
 #nhatro .nhatro__left__items li div > a{
@@ -164,13 +192,13 @@
 }
 
 @media(max-width: 1200px){
-    #nhatro .nhatro__left__items li > div > div > p{
+    #nhatro .nhatro__left__items li > div > div{
         width: 16rem;
     }
 }
 
 @media(max-width: 1108px){
-    #nhatro #nhatro__left .nhatro__left__items li{
+    #nhatro #nhatro__left .nhatro__left__items > li{
         Width: 35%;
     }
 }
