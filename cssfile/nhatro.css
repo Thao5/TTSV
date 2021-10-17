@@ -58,6 +58,7 @@
 
 #nhatro .nhatro__left__items li > div > div > div ul li{
     background: transparent;
+    list-style: none;
 }
 
 #nhatro .nhatro__left__items li > div > div > div ul li p{
@@ -74,6 +75,7 @@
 
 #nhatro .nhatro__left__items li > div > div > div ul li h3{
     background: transparent;
+    text-align: center;
 }
 
 #nhatro .nhatro__left__items li > div > div > div ul li h4{
@@ -189,6 +191,13 @@
 
 #back-tro a .fa-arrow-left{
     font-size: 4rem;
+}
+
+.fa-phone-volume{
+    font-size: 3rem;
+    color: #32cd32;
+    margin-left: 40%;
+    background: transparent;
 }
 
 @media(max-width: 1200px){
