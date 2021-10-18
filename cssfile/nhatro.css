@@ -200,6 +200,25 @@
     background: transparent;
 }
 
+.fa-phone-volume:hover{
+    animation: animate 1s;
+}
+
+@keyframes animate{
+    0%
+    {
+        transform: rotate(0deg)
+    }
+    50%
+    {
+        transform: rotate(45deg)
+    }
+    100%
+    {
+        transform: rotate(0deg)
+    }
+}
+
 @media(max-width: 1200px){
     #nhatro .nhatro__left__items li > div > div{
         width: 16rem;
