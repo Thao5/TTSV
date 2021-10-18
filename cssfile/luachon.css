@@ -40,8 +40,8 @@ a.luachon--item{
 .danhsach{
     margin-top: 82px;
     width: 250px;
-    height: 110px;
-    min-height: 100px;
+    height: 50px;
+    min-height: 50px;
     margin-left: 0px;
     background-color: yellow;
     display: block;
