@@ -1,0 +1,15 @@
+.footer1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright--large{
+    font-size: 2rem;
+    text-align: end;
+    margin: 0 80px 45px 0;
+}
+
+footer{
+    display:flex;
+    flex-direction: column;
+}

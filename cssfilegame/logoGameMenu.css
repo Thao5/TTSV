@@ -1,0 +1,12 @@
+#logoGameMenu{
+    z-index: 99;
+    position: absolute;
+    left: 40%;
+    top: 10%;
+}
+
+#logoGameMenu figure figcaption{
+    color: white;
+    line-height: 80px;
+    margin-left: -19px;
+}

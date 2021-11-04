@@ -1,0 +1,232 @@
+#start{
+    position: absolute;
+    left:41%;
+    top: 60%;
+    font-size: 2em;
+    color: #fff;
+    letter-spacing: 2px; /*gian chu*/
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0px 25px 50px rgba(0,0,0,0.5);
+    padding: 30px 60px;
+    background-color: #1670f0;
+    overflow: hidden;
+}
+
+#start span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #1670f0, purple);
+    transform: translateX(-100%);
+}
+
+#start:hover span:nth-child(1){
+   animation: chayMau1 2s linear infinite;
+}
+
+@keyframes chayMau1{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+#start span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to left, #1670f0, purple);
+    transform: translateX(-100%);
+}
+
+#start:hover span:nth-child(3){
+    animation: chayMau3 2s linear infinite;
+ }
+ 
+ @keyframes chayMau3{
+     0%{
+         transform: translateX(100%);
+     }
+     100%{
+         transform: translateX(-100%);
+     }
+ }
+
+#start span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #1670f0, purple);
+    transform: translateY(-100%);  
+}
+
+#start:hover span:nth-child(2){
+    animation: chayMau2 2s linear infinite;
+    animation-delay: 1s;
+ }
+ 
+ @keyframes chayMau2{
+     0%{
+         transform: translateY(-100%);
+     }
+     100%{
+         transform: translateY(100%);
+     }
+ }
+
+#start span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to top, #1670f0, purple);
+    transform: translateY(-100%);
+}
+
+#start:hover span:nth-child(4){
+    animation: chayMau4 2s linear infinite;
+    animation-delay: 1s;
+}
+ 
+@keyframes chayMau4{
+     0%{
+         transform: translateY(100%);
+     }
+     100%{
+         transform: translateY(-100%);
+     }
+}
+
+#maze{
+    position: absolute;
+    top: 15%;
+    left: 3%;
+    width: 300px;
+    height: 350px;
+    color: transparent;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.menu img{
+    position: absolute;
+    left: 12.5%;
+    top: 8%;
+}
+
+.menu h2{
+    text-decoration: none;
+    position: absolute;
+    left: 25.5%;
+    bottom: 10%;
+    font-size: 3em;
+}
+
+.menu span{
+    position: absolute;
+}
+
+.menu span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #fff, #21ebff);
+    transform: translateX(-100%);
+}
+
+.menu:hover span:nth-child(1){
+    animation: chayMau1 0.5s linear 1;
+}
+
+.menu span:nth-child(3){
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to left, #fff, #21ebff);
+    transform: translateX(-100%);
+}
+
+.menu:hover span:nth-child(3){
+    animation: chayMau3 0.5s linear 1;
+    animation-delay: 0.5s;
+}
+
+.menu span:nth-child(2){
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #fff, #21ebff);
+    transform: translateY(-100%);
+}
+
+.menu:hover span:nth-child(2){
+    animation: chayMau2 0.5s linear 1;
+    animation-delay: 0.25s;
+}
+
+.menu span:nth-child(4){
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to top, #fff, #21ebff);
+    transform: translateY(-100%);
+}
+
+.menu:hover span:nth-child(4){
+    animation: chayMau4 0.5s linear 1;
+    animation-delay: 0.75s;
+}
+
+#maze:hover {
+    transition-delay: 1.3s;
+    background-color: #21ebff;
+    color: #fff;
+    box-shadow : 0 0 50px #21ebff;
+}
+
+#bggame{
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    width: 300px;
+    height: 350px;
+    color: transparent;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+#bggame{
+    font-size: 10px;
+}
+
+#bggame h2{
+    bottom: 6%;
+    left: auto;
+    text-align: center;
+}
+#bggame img{
+    left: 12%;
+    width: 80%;
+    height: 60%;
+}
+
+#bggame:hover {
+    transition-delay: 1.3s;
+    background-color: #21ebff;
+    color: #fff;
+    box-shadow : 0 0 50px #21ebff;
+}

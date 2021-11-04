@@ -10,11 +10,11 @@ body{
     background-color: #000;
 }
 
-section{
+section#bg{
     height: 100vh;
 }
 
-span{
+section#bg span{
     position: absolute;
     pointer-events: none; /*chặn sự kiện chuột*/
     background: #fff;
