@@ -3,10 +3,11 @@
     position: relative;
     justify-content: space-between;
     margin-top: 45px;
-    background-color: #fff;
+    background-color: orange;
     margin-left: -8px;
     margin-bottom: 60px;
     z-index: 9999;
+    box-shadow: 2px 2px 20px 0.2px #ccc;
 }
 
 .luachon__left{
@@ -22,7 +23,7 @@
 }
 
 .luachon--item{
-    background-color: #fff;
+    background-color: orange;
     color: #000;
     font-weight: bold;
     padding: 2rem;
@@ -32,18 +33,6 @@
 
 a.luachon--item{
     text-decoration: none;
-}
-
-.danhsach{
-    margin-top: 82px;
-    width: 250px;
-    height: 50px;
-    min-height: 50px;
-    margin-left: 0px;
-    background-color: yellow;
-    display: block;
-    position: absolute;
-    z-index: 99999;
 }
 
 .luachon--item--danhsach{
@@ -77,24 +66,11 @@ a.flex-column > span{
     left: 22%;
     transition: 0.65s;
     opacity: 0;
-    background-color: #ccc;
-}
-
-#dichvu{
-    position: absolute;
-    transform: translateY(150%);
-    left: 18%;
-    transition: 0.65s;
-    opacity: 0;
-    background-color: #ccc;
-}
-
-#dichvu > span{
-    background-color: #ccc;
+    background-color: rgb(206, 143, 26);;
 }
 
 .luachon--item:hover{
-    background-color: #ccc;
+    background-color: rgb(206, 143, 26);
 }
 
 .luachon--item::after{
@@ -138,32 +114,8 @@ a.flex-column > span{
     opacity: 1;
 }
 
-.luachon--item--danhsach .item span{
-    background: transparent;
-}
-
-.luachon--item--danhsach ul.danhsach li{
-    list-style: disc;
-}
-
-.luachon--item--danhsach ul.danhsach li a{
-    background-color: yellow;
-    text-decoration: none;
-    display: block;
-    color:  #000;
-    border-bottom: 1px solid #ccc;
-    margin-left: -40.25px;
-    line-height: 40px;
-    text-indent: 28px;
-}
-
 .luachon--item{
     cursor: pointer;
-}
-
-.luachon--item--danhsach ul.danhsach li a:hover{
-    background-color: rgb(170, 180, 111);
-    transition: 0.65s;
 }
 
 .mucluc{
@@ -205,27 +157,9 @@ a.flex-column > span{
         left: 0;
     }
 
-    .luachon--item--danhsach{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .luachon--item--danhsach > a{
-        width: auto;
-    }
-
-    .luachon--item--danhsach .danhsach{
-        margin: 0px 0 0 150px;
-    }
-
     .luachon__left{
         flex-direction: column;
         margin-left: 0px;
-    }
-
-    .luachon__left ul.danhsach{
-        width: 180px;
     }
 
     .luachon--item{

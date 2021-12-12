@@ -37,6 +37,7 @@
 #nhatro .nhatro__left__items li > div > div{
     width: 0;
     margin:0;
+    margin-left: 15px;
     padding:0;
 }
 
@@ -45,10 +46,10 @@
     height: 100%;
     overflow: auto;
     background-color: #fff;
+    box-shadow: 2px 2px 20px 0.5px #000;
     margin: 0;
     padding: 0;
-    border: solid #fff;
-    border-radius: 25px;;
+    border-radius: 25px;
     z-index: 99999;
 }
 
@@ -94,11 +95,11 @@
     padding-top: 25px;
     text-align: center;
     background-color: #fff;
-    box-shadow: 2px 0 2px #ccc;
+    box-shadow: 2px 2px 20px 0.2px #000;
 }
 
 #nhatro .nhatro__left__items li div > a > h3{
-    background-color: cyan;
+    background-color: orange;
     position: relative;
     margin: 0;
     padding: 0;
@@ -109,10 +110,10 @@
     height: 18.75rem;
     text-indent: 20%;
     line-height: 50px;
-    background-color: #fff;
-    border-style: solid;
-    border-color: #ccc;
-    border-bottom: none;
+    background-color: orange;
+    box-shadow: 0 1px 20px 0.5px #000;
+    border-radius: 20%;
+    overflow: hidden;
 }
 
 #nhatro #nhatro__right ul{
@@ -132,10 +133,10 @@
 }
 
 #nhatro__right div > h2 {
-    background: #fff;
+    background: orange;
     margin-bottom: 0;
     padding-bottom: 5%;
-    color: red;
+    color: #fff;
 }
 
 #nhatro #nhatro__right ul > li > a{
@@ -201,7 +202,7 @@
 }
 
 .fa-phone-volume:hover{
-    animation: animate 1s;
+    animation: animate 1s infinite;
 }
 
 @keyframes animate{
