@@ -3,7 +3,7 @@
     position: relative;
     justify-content: space-between;
     margin-top: 45px;
-    background-color: cyan;
+    background-color: #fff;
     margin-left: -8px;
     margin-bottom: 60px;
     z-index: 9999;
@@ -22,19 +22,16 @@
 }
 
 .luachon--item{
-    background-color: cyan;
+    background-color: #fff;
     color: #000;
     font-weight: bold;
     padding: 2rem;
+    position: relative;
+    transition: 0.65s;
 }
 
 a.luachon--item{
     text-decoration: none;
-}
-
-.luachon--item:hover{
-    background-color: rgb(111, 180, 180);
-    transition: 0.65s;
 }
 
 .danhsach{
@@ -53,7 +50,9 @@ a.luachon--item{
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 0;
+    padding: 2rem 0 2rem 0;
+    width: 100%;
+    align-items: center;
 }
 
 .luachon--item--danhsach .item{
@@ -62,9 +61,81 @@ a.luachon--item{
     color: #000;
 }
 
-.luachon--item--danhsach > a{
-    width: 100%;
-    padding: 2rem;
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+a.flex-column{
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+a.flex-column > span{
+    position: absolute;
+    transform: translateY(150%);
+    left: 22%;
+    transition: 0.65s;
+    opacity: 0;
+    background-color: #ccc;
+}
+
+#dichvu{
+    position: absolute;
+    transform: translateY(150%);
+    left: 18%;
+    transition: 0.65s;
+    opacity: 0;
+    background-color: #ccc;
+}
+
+#dichvu > span{
+    background-color: #ccc;
+}
+
+.luachon--item:hover{
+    background-color: #ccc;
+}
+
+.luachon--item::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    border-style: solid;
+    border-radius: 50%; 
+    left: 21%;
+    transform: translateY(-40%);
+    border-color: #fff;
+    box-shadow: 0 -10px 20px 0.5px rgb(77, 76, 76);
+    transition: 0.65s;
+    opacity: 0;
+}
+
+.luachon--item:hover > span{
+    transform: translateY(100%);
+    transition-delay: 0.3s;
+    opacity: 1;
+}
+
+.luachon--item > i{
+    transition: transform 0.65s;
+    background: transparent;
+}
+
+.luachon--item:hover > i{
+    transform: matrix(1.5,0,0,1.5,0,-40);/*matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
+}
+
+.luachon--item:hover::after{
+    transform: translateY(-100%);
+    opacity: 1;
+}
+
+.luachon--item:hover #dichvu{
+    transform: translateY(100%);
+    transition-delay: 0.3s;
+    opacity: 1;
 }
 
 .luachon--item--danhsach .item span{

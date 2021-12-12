@@ -2,7 +2,7 @@ $(document).ready(function(){
     if($(window).width() > 1108){
         $(".danhsach").hide()
 
-        $(".luachon--item--danhsach > a").click(function(){
+        $(".luachon--item--danhsach").click(function(){
             event.preventDefault()
             var tab = $(this).attr("href")
             $(".luachon--item--danhsach .danhsach").fadeOut(650)
@@ -23,7 +23,7 @@ $(document).ready(function(){
         
         $(".danhsach").hide()
 
-        $(".luachon--item--danhsach > a").click(function(){
+        $(".luachon--item--danhsach").click(function(){
             event.preventDefault()
             var tab = $(this).attr("href")
             $(".luachon--item--danhsach .danhsach").fadeOut(650)

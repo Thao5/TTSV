@@ -51,26 +51,47 @@
                     <div class="luachon--mobile">
                         <nav class="luachon">
                             <div class="luachon__left">
-                                <a class="luachon--item" href="index.html">Trang chủ</a>
-                                <div class="luachon--item luachon--item--danhsach">
-                                    <a class="item" href="#tab1">
-                                        <span>Tiện ích</span> 
-                                    </a>
-                                </div>
-                                <div class="luachon--item luachon--item--danhsach">
-                                    <ul id="tab2" class="danhsach">
-                                        <li><a href="tel:0706847756">Tư vấn <i class="fas fa-phone-volume"></i></a></li>
-                                    </ul>
-                                    <a class="item" href="#tab2">
+                                <a class="luachon--item flex-column" href="index.html">
+                                    <i class="fas fa-home"></i>
+                                    <span style="left: 15%">Trang chủ</span>
+                                </a>
+
+                                <a class="luachon--item item flex-column" href="#tab1">
+                                    <i class="fas fa-tags"></i>
+                                    <span>Tiện ích</span> 
+                                </a>
+
+                                <a class="flex-column luachon--item luachon--item--danhsach" href="#tab2">
+                                        <i class="fas fa-phone"></i>
+                                    <div id="dichvu">
                                         <span>Dịch vụ</span>
-                                        <i class="fas fa-sort-down item"></i></a>
-                                </div>
-                                <a class="luachon--item" href="game.html">Trò chơi</a>
+                                        <i class="fas fa-sort-down item"></i>
+                                    </div>
+                                </a>
+                                <ul id="tab2" class="danhsach">
+                                    <li>
+                                        <a href="tel:0706847756">
+                                            <span>Tư vấn</span> 
+                                            <i class="fas fa-phone-volume"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <a class="luachon--item item flex-column" href="game.html">
+                                    <i class="fas fa-gamepad"></i>
+                                    <span>Trò chơi</span>
+                                </a>
                             </div>
 
                             <div class="luachon__right">
-                                <a class="luachon--item" href="">Đăng ký</a>
-                                <a class="luachon--item" href="">Đăng Nhập</a>
+                                <a class="luachon--item flex-column" href="">
+                                    <i class="fas fa-pencil-alt"></i>
+                                    <span>Đăng ký</span>
+                                </a>
+                                <a class="luachon--item flex-column" href="">
+                                    <i class="fas fa-user"></i>
+                                    <span style="left: 12%">Đăng Nhập</span>
+                                </a>
                             </div>
                         </nav>
                         <img class="mucluc" src="imgweb/muclucdanhsach.png" alt="Mục lục"/>
