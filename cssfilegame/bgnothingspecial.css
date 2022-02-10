@@ -1,0 +1,195 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right ,#fff, rgb(190, 186, 186));
+    overflow-x: hidden;
+}
+
+
+.s{
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-color: rgb(235, 234, 234);
+    border-radius: 50%;
+    background-color: rgb(235, 234, 234);
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.s1{
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-color: rgb(182, 179, 179);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.first{
+    position: relative;
+    left: 49%;
+    top: 250px;
+}
+
+#k3{
+    position: relative;
+    left: 30%;
+    top: 250px;
+}
+
+#k4{
+    position: relative;
+    left: 68%;
+    top: 250px;
+}
+
+#k5{
+    position: relative;
+    top: 550px;
+    left: 49%;
+}
+
+#start span{
+    padding: 0 40px 0 40px;
+    border-style: solid;
+    border-radius: 70px;
+    position: absolute;
+    left: 40%;
+    top: 320px;
+    font-size: 60px;
+    border-color: rgb(182, 179, 179);
+    color:rgb(182, 179, 179);
+    transition: 1s;
+}
+
+#start{
+    text-decoration: none;
+    align-items: center;
+}
+
+#start:hover span{
+    color: #fff;
+    background-color: rgb(182, 179, 179);
+}
+
+.text{
+    font-size: 2rem;
+    position: absolute;
+}
+
+#text2{
+    top: 6%;
+}
+
+#k6{
+    position: relative;
+    left: 39%;
+    top: 100px;
+}
+
+#k7{
+    position: relative;
+    left: 58%;
+    top: 100px;
+}
+
+.d{
+    position: absolute;
+    width: 40px;
+    height: 242px;
+    border-radius: 30px;
+    background-color: rgb(253 167 167);
+}
+
+#d2{
+    transform: rotate(43deg);
+    top: 107px;
+    left: 35.55%;
+}
+
+#d6{
+    transform: rotate(43deg);
+    top: 107px;
+    left: 54.5%;
+}
+#d1{
+    height: 245px;
+    transform: rotate(-46deg);
+    top: 107px;
+    left: 45%;
+}
+
+#d5{
+    height: 245px;
+    transform: rotate(-46deg);
+    top: 107px;
+    left: 64%;
+}
+
+.f{
+    position: absolute;
+    width: 40px;
+    height: 450px;
+    border-radius: 30px;
+    background-color: rgb(253 167 167);
+}
+
+#f3{
+    transform: rotate(-44.5deg);
+    top: 230px;
+    left: 40.5%;
+}
+
+#f4{
+    height: 458px;
+    transform: rotate(44.5deg);
+    top: 228px;
+    left: 59.5%;
+}
+
+.f1{
+    position: absolute;
+    width: 200px;
+    height: 410px;
+    border-radius: 30px;
+    background-color: rgb(253 167 167);
+    transform: rotate(-45deg);
+    top: 175px;
+    left: 40.5%;
+}
+
+.f2{
+    position: absolute;
+    width: 200px;
+    height: 410px;
+    border-radius: 30px;
+    background-color: rgb(253 167 167);
+    transform: rotate(45deg);
+    top: 175px;
+    left: 49.5%;
+}
+
+#loveyou{
+    position: absolute;
+    left: 41.5%;
+    top: 340px;
+    font-weight: bold;
+    font-size: 56px;
+}
+
+#play-btn{
+    position: absolute;
+    left: 48%;
+    top: 450px;
+    font-size: 56px;
+    color: #000;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-style: solid;
+    text-align: center;
+    line-height: 95px;
+    text-indent: 10px;
+}
