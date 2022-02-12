@@ -132,6 +132,10 @@
     font-size: 3em;
 }
 
+#maze h2{
+    left: 20%;
+}
+
 .menu span{
     position: absolute;
 }
