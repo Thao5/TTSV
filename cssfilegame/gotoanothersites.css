@@ -1,0 +1,67 @@
+.gotoanothersites{
+    width: 100px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 50px;
+    position: fixed;
+    top: 40%;
+    color: #000;
+    transition: 1s;
+}
+
+.fa-angle-right{
+    font-size: 45px;
+    position: absolute;
+    left: 70%;
+    top: 6%;
+}
+.fa-home{
+    font-size: 30px;
+    position: absolute;
+    left: 15%;
+    top: 15%;
+}
+
+#forum{
+    transform: translateX(-70%);
+}
+
+#forum:hover{
+    transform: translateX(0%);
+}
+
+#game.gotoanothersites{
+    right: 0;
+}
+
+.fa-angle-left{
+    font-size: 45px;
+    position: absolute;
+    left: 10%;
+    top: 6%;
+}
+
+.fa-gamepad{
+    font-size: 30px;
+    position: absolute;
+    right: 15%;
+    top: 17%;
+}
+
+#game{
+    transform: translateX(60%);
+}
+
+#game:hover{
+    transform: translateX(-7%);
+}
+
+.link{
+    font-size: 54px;
+    position: absolute;
+    left: 35%;
+}
+
+#G.link{
+    left: 40%;
+}

@@ -15,6 +15,8 @@ $(document).ready(function(){
     $(".f2").hide()
     $(".play").hide()
     $("#loveyou").hide()
+    $(".gotoanothersites").hide()
+    $(".link").hide()
 
     $("#start").click(function(){
         $("#start").fadeOut(1000);
@@ -76,6 +78,9 @@ $(document).ready(function(){
                 $(".play").fadeIn(1000);
             }, 1000)
         }, 2500)
+        setTimeout(function(){
+            $(".gotoanothersites").fadeIn("slow")
+        }, 5000)
     })
 
     $("a").click(function(){
@@ -97,5 +102,21 @@ $(document).ready(function(){
         setTimeout(function(){
             rr.play();
         }, 1050)
+    })
+
+    $("#forum").mouseenter(function(){
+        $("#F").fadeIn(1000)
+    })
+
+    $("#forum").mouseout(function(){
+        $("#F").fadeOut(1000)
+    })
+
+    $("#game").mouseenter(function(){
+        $("#G").fadeIn(1000)
+    })
+
+    $("#game").mouseout(function(){
+        $("#G").fadeOut(1000)
     })
 })
