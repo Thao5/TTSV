@@ -111,6 +111,7 @@
     position: absolute;
     top: 15%;
     left: 3%;
+    width: 350px;
     height: 350px;
     color: transparent;
     overflow: hidden;
