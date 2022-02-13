@@ -1,0 +1,38 @@
+.luachon{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    background-color: cyan;
+    margin-left: -8px;
+}
+
+.luachon__left{
+    display:flex;
+    justify-content: space-evenly;
+    margin-left: 30px;
+}
+
+.luachon__right{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 80px;
+}
+
+.luachon--item{
+    background-color: cyan;
+    padding: 2rem;
+    color: #000;
+    font-weight: bold;
+}
+
+a.luachon--item{
+    text-decoration: none;
+}
+
+.luachon--item:hover{
+    background-color: rgb(111, 180, 180);
+}
+
+.luachon .luachon--item--danhsach:hover{
+    cursor: pointer;
+}
