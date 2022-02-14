@@ -306,7 +306,7 @@ header a > div{
     transform: rotate(30deg);
     box-shadow: 10px 3px 10px 0 #000;
     animation: v1 1.5s 1;
-    z-index: 999999;
+    z-index: 9;
 }
 
 #v2{
@@ -347,7 +347,7 @@ header a > div{
 }
 
 .T1:hover{
-    transform: scale(-100%);
+    transform: rotate(360deg);
 }
 
 .T2{
@@ -359,7 +359,7 @@ header a > div{
 }
 
 .T2:hover{
-    transform: scale(-100%);
+    transform: rotate(360deg);
 }
 
 .S{
@@ -371,7 +371,7 @@ header a > div{
 }
 
 .S:hover{
-    transform: scale(-100%);
+    transform: rotate(360deg);
 }
 
 .V{
@@ -385,9 +385,4 @@ header a > div{
 
 .V:hover{
     transform: translateX(100px) rotate(60deg);
-}
-
-@media (max-width: 700px) {
-    
-    
 }

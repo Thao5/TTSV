@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TTSV - Tìm trọ cho sinh viên</title>
+        <meta name="description" content="TTSV - Tìm trọ cho sinh viên; Tìm trọ cho sinh viên giá rẻ"/>
+        <meta charset="utf-8">
+        <meta http-equiv="refresh" content="1800"/>
+        <meta name="keywords" content="trọ, tìm trọ, trọ sinh viên, nhà trọ sinh viên"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <link href="imgweb/Capture.PNG" rel="shortcut icon"/>
+        <link rel="stylesheet" href="cssfile/web.css"/>
+        <script src="jsfile/gototopbtn.js"></script>
+        <link rel="stylesheet" href="cssfile/tienich.css"/>
+        <script src="jsfile/logo.js"></script>
+        <script src="jsfile/tienich.js"></script>
+        <style>
+            body{
+                font-family: arial, helvetica, sans-serif;
+            }  
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html">
+                    <div class="T1">
+                        <div id="T1"></div>
+                        <div id="T2"></div>
+                    </div>
+                    <div class="T2">
+                        <div id="T3"></div>
+                        <div id="T4"></div>
+                    </div>
+                    <div class = "S">
+                        <div id ="s1"></div>
+                        <div id ="s2"></div>
+                        <div id ="s3"></div>
+                        <div id ="s4"></div>
+                        <div id ="s5"></div>
+                    </div>
+                    <div class = "V">
+                        <div id ="v1"></div>
+                        <div id ="v2"></div>
+                    </div>
+            </a>
+        </header>
+
+        <section id="modal-box">
+            <div>Xác nhận đóng tiền</div>
+            <a id="correct" href="javascript:;">
+                <i class="fa-solid fa-check"></i>
+                <span>OK</span>
+            </a>
+            <a id="thoat" href="javascript:;">
+                <i class="fa-solid fa-xmark"></i>
+                <span>KHÔNG</span>
+            </a>
+        </section>
+
+        <section id="modal-box-wrong">
+            <div>Không hợp lệ!</div>
+            <a id="wrong" href="javascript:;">
+                <i class="fa-solid fa-xmark"></i>
+                <span>THOÁT</span>
+            </a>
+        </section>
+
+        <div class="modal-background"></div>
+
+        <section class="menu">
+            <a class="select" href="#content1" class="on">Đóng tiền trọ</a>
+            <a class="select" href="#content2">Tư vấn</a>
+            <div id="test"></div>
+        </section>
+
+        <section id="content1">
+            <span class="text">Nhập số tiền cần đóng: </span>
+            <div class="box">
+                <div>
+                    <input type="text" placeholder="150.000-300.000">
+                </div>
+                <a id="submit" href="javascript:;">
+                    <i class="fa-solid fa-credit-card"></i>
+                </a>
+            </div>
+        </section>
+        <section id="content2">
+            <a id="phone" href="0706847756"><i class="fa-solid fa-phone-flip"></i></a>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,241 @@
+.menu{
+    margin-top: 100px;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    position: relative;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    height: 15%;
+    width: 250px;
+    line-height: 230%;
+    text-indent: 20%;
+    border-radius: 25px;
+    z-index: 99;
+}
+
+.on{
+    background-color: orange;
+}
+
+#test{
+    height: 15%;
+    width: 250px;
+    border-radius: 25px;
+    position: absolute;
+    background-color: orange;
+}
+
+.box div:first-child{
+    border-radius: 25px;
+    width: 0;
+    height: 50px;
+    background-color: orange;
+    position: absolute;
+    right: 25%;
+    top: 52.5%;
+    transition: 0.65s;
+}
+
+.box input{
+    line-height: 15px;
+    text-indent: 15px;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-weight: bold;
+    font-size: 45px;
+    color: #fff;
+    padding-right: 50px;
+}
+
+#submit{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: orange;
+    top: 50%;
+    right: 23%;
+}
+
+#submit i{
+    position: absolute;
+    font-size: 45px;
+    color: #fff;
+    left: 22%;
+    top: 28%;
+}
+
+#content1 .text{
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+}
+
+.text:first-child{
+    top: 25%;
+    right: 25%;
+}
+
+.box:hover div{
+    width: 600px;
+}
+
+#phone{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: orange;
+    position: absolute;
+    top: 30%;
+    left: 60%;
+}
+
+#phone i{
+    position: absolute;
+    font-size: 47px;
+    top: 25%;
+    left: 25%;
+    color: #fff;
+}
+
+.modal-background{
+    display: block;
+    position: fixed;
+    z-index: 999;  
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+
+#modal-box{
+    width: 800px;
+    height: 300px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    z-index: 9999;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    background-color: #fefefe;
+}
+
+#modal-box-wrong{
+    width: 800px;
+    height: 300px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    z-index: 9999;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    background-color: #fefefe;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+
+#modal-box-wrong div{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+#wrong{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    text-decoration: none;
+    color: red;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: solid; 
+    text-indent: 5px;
+    transition: 0.65s;
+}
+
+#wrong i,span{
+    margin-top: 10px;
+}
+
+#wrong:hover{
+    background-color: red;
+    color: #fff;
+}
+
+@keyframes animatetop {
+    from {top: -50%; opacity: 0}
+    to {top: 5%; opacity: 1}
+}
+
+#modal-box{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#modal-box div{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+#correct{
+    position: absolute;
+    bottom: 5%;
+    right: 30%;
+    text-decoration: none;
+    color: orange;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    border: solid; 
+    text-indent: 5px;
+    transition: 0.65s;
+}
+
+#correct i,span{
+    margin-top: 10px;
+}
+
+#correct:hover{
+    background-color: orange;
+    color: #fff;
+}
+
+#thoat{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    text-decoration: none;
+    color: red;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: solid; 
+    text-indent: 5px;
+    transition: 0.65s;
+}
+
+#thoat i,span{
+    margin-top: 10px;
+}
+
+#thoat:hover{
+    background-color: red;
+    color: #fff;
+}
