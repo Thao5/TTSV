@@ -40,5 +40,10 @@ $(document).ready(function(){
                 $(".modal-background").fadeOut(650)
             })
         }
+        $(".modal-background").click(function(){
+            $("#modal-box").fadeOut(650)
+            $(".modal-background").fadeOut(650)
+            $("#modal-box-wrong").fadeOut(650)
+        })
     })
 })
